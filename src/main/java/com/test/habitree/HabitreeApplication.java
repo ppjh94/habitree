@@ -2,8 +2,12 @@ package com.test.habitree;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
+@EntityScan(basePackages = "com.test.habitree.domain")
+@EnableJpaRepositories(basePackages = "com.test.habitree.repository")
 public class HabitreeApplication {
 
 	public static void main(String[] args) {

@@ -33,5 +33,3 @@ spring:
       com.test.habit: debug
       org.hibernate.SQL: debug
       org.mybatis: debug
-
-
